@@ -1,4 +1,7 @@
+<gt-header></gt-header>
+<gt-navbar></gt-navbar>
+<gt-sidenav [style.height.px]="sidenavHeight"></gt-sidenav>
 <div id="content" [style.min-height.px]="windowHeight" [style.min-width.px]="windowWidth">
   <ng-content></ng-content>
-  <iu-wallpaper *ngIf="hasWallpaper" [images]="images" [windowHeight]="windowHeight" [windowWidth]="windowWidth"></iu-wallpaper>
+  <iu-wallpaper *ngIf="hasWallpaper" [images]="images"></iu-wallpaper>
 </div>
