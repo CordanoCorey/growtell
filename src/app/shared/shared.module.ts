@@ -9,6 +9,7 @@ import { EmailComponent } from './email/email.component';
 import { MissionComponent } from './mission/mission.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { SocialIconsComponent } from './social-icons/social-icons.component';
 
 @NgModule({
   imports: [
@@ -25,6 +26,7 @@ import { SidenavComponent } from './sidenav/sidenav.component';
     MissionComponent,
     NavbarComponent,
     SidenavComponent,
+    SocialIconsComponent,
   ],
   exports: [
     IuSharedModule,
@@ -33,6 +35,7 @@ import { SidenavComponent } from './sidenav/sidenav.component';
     FooterComponent,
     EmailComponent,
     MissionComponent,
+    SocialIconsComponent,
     WallpaperModule,
   ]
 })
