@@ -8,7 +8,7 @@ import { build, Image } from '@caiu/library';
 })
 export class ContainerComponent implements OnInit {
 
-  @Input() hasWallpaper = true;
+  @Input() hasWallpaper = false;
   images = [
     build(Image, { src: 'assets/highlights/GrowandTell-3523.jpg', height: 2880, width: 1920 }),
     build(Image, { src: 'assets/highlights/GrowandTell-3547.jpg', height: 2575, width: 1717 }),

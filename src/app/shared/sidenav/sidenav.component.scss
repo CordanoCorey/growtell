@@ -2,7 +2,7 @@
 @import '../../../common';
 .sidenav {
     background: #111;
-    @include black-hgradient();
+    @include primary-hgradient();
     box-shadow: 5px 0 5px -2px #888;
     -webkit-box-shadow: 5px 0 5px -2px #888;
     -webkit-box-flex: 0;
@@ -29,6 +29,7 @@
     }
     a.link {
         @include mat-elevation(4);
+        @include black-hgradient();
         position: absolute;
         left: 0px;
         top: 160px;

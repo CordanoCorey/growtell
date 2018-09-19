@@ -847,3 +847,12 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #7CFC00;
 }
+
+.card {
+    @include mat-elevation(4);
+    background-color: #fff;
+    position: absolute;
+    z-index: 3;
+    overflow: hidden;
+    padding: 10px 20px;
+}

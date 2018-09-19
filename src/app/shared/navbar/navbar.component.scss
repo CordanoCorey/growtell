@@ -6,10 +6,7 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    background-color: #323232;
-    background: darkgreen;
-    background: #8e8e8e;
-    background: #dadada;
+    background: $primary-color;
     padding: 0;
     padding-top: 0px;
     position: relative;
@@ -31,7 +28,6 @@
         padding: 14px 28px;
         position: relative;
         text-decoration: none;
-        color: black;
         text-shadow: 0px 1px 0px rgba(255, 255, 255, .3);
         text-shadow: 0px 1px 1px #4d4d4d;
         color: #222;
