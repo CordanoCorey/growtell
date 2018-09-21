@@ -1,7 +1,7 @@
 @import '../../../common';
 
 .social-icons {
-  // @include black-gradient();
+  @include silver-hgradient();
   height: 64px;
   overflow: hidden;
   max-width: 160px;

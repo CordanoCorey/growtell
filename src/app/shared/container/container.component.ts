@@ -105,11 +105,11 @@ export class ContainerComponent implements OnInit {
   constructor() { }
 
   get sidenavHeight(): number {
-    return this.windowHeight + 50;
+    return this.windowHeight + 50 + 64;
   }
 
   get windowHeight(): number {
-    return parseInt(localStorage.getItem('WINDOW_HEIGHT'), 10);
+    return parseInt(localStorage.getItem('WINDOW_HEIGHT'), 10) - 64;
   }
 
   set windowHeight(value: number) {
@@ -117,7 +117,7 @@ export class ContainerComponent implements OnInit {
   }
 
   get windowWidth(): number {
-    return parseInt(localStorage.getItem('WINDOW_WIDTH'), 10);
+    return parseInt(localStorage.getItem('WINDOW_WIDTH'), 10) - 120;
   }
 
   set windowWidth(value: number) {

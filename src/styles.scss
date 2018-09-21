@@ -63,7 +63,7 @@ header .intro-text .intro-heading {
 }
 
 body {
-  overflow-x: hidden;
+  overflow: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -873,7 +873,7 @@ body {
   // @include primary-gradient();
   // background-color: #fff;
   color: #fff;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.6);
   position: absolute;
   z-index: 3;
   overflow: hidden;

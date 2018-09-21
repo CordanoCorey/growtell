@@ -1,5 +1,8 @@
 <gt-container [hasWallpaper]="true">
-    <gt-mission class="card"></gt-mission>
+  <div id="inner-content" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="20px">
+    <div class="intro-lead-in font-effect-emboss">"Growing Confidence in Communication!"</div>
     <div class="intro-heading font-effect-3d-float">Welcome!</div>
-    <!-- <a class="page-scroll btn btn-xl font-effect-outline" href="/services">Tell Me More</a> -->
+    <gt-mission class="card"></gt-mission>
+    <a mat-raised-button class="page-scroll btn btn-xl font-effect-outline" routerLink="/services">Tell Me More</a>
+  </div>
 </gt-container>
