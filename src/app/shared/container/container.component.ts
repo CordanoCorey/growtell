@@ -82,7 +82,6 @@ export class ContainerComponent implements OnInit {
   ngOnInit() {
     this.windowHeight = parseInt(localStorage.getItem('WINDOW_HEIGHT'), 10);
     this.windowWidth = parseInt(localStorage.getItem('WINDOW_WIDTH'), 10);
-    console.log(this.windowHeight, this.windowWidth);
   }
 
   @HostListener('window:load', ['$event'])
