@@ -1,8 +1,9 @@
 <gt-header [windowWidth]="windowWidth"></gt-header>
 <!-- <gt-navbar></gt-navbar> -->
 <gt-sidenav [style.height.px]="sidenavHeight"></gt-sidenav>
-<div id="content" [style.height.px]="windowHeight" [style.width.px]="windowWidth">
+
+<div id="content" class="scrollable" [style.height.px]="windowHeight" [style.width.px]="windowWidth"
+  [style.background-image]="hasBackgroundImage ? 'url(' + backgroundImage + ')' : 'none'">
   <ng-content></ng-content>
-  <iu-wallpaper *ngIf="hasWallpaper" [images]="images" [imageOpacity]="0.6" [style.height.px]="windowHeight"
-    [style.width.px]="windowWidth"></iu-wallpaper>
+  <iu-wallpaper *ngIf="hasWallpaper" [images]="images" [imageOpacity]="0.6"></iu-wallpaper>
 </div>

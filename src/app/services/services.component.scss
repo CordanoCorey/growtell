@@ -1,73 +1,102 @@
-.our-services-row {
-    margin: 20px 0px;
-}
+@import '~@angular/material/_theming';
+@import '../../common';
 
-.our-services {
-    width: 100%;
-    height: auto;
-}
+#inner-content {
 
-ul {
-    list-style-type: none;
-}
+  .graphic {
+    @include mat-elevation(4);
+    height: 400px;
+  }
 
-.our-services-heading {
-    font-size: 24px !important;
-    padding-bottom: 0px !important;
+  .step {
+    width: 30%;
+    margin: 10px 1%;
     float: left;
+
+    .mat-fab {
+      background-color: $primary-color;
+      color: #fff;
+      font-size: 24px;
+    }
+  }
+
+  .card-list {
+    width: 30%;
+    margin: 10px 1%;
+    float: left;
+  }
 }
 
-.services-list p {
-    vertical-align: middle;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    color: #000;
-    font-weight: bold;
-}
+// .our-services-row {
+//   margin: 20px 0px;
+// }
 
-.services-list p {
-    vertical-align: middle;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    color: #000;
-}
+// .our-services {
+//   width: 100%;
+//   height: auto;
+// }
 
-.services-list .services-list-population p {
-    font-size: 28px;
-    font-weight: bold;
-}
+// ul {
+//   list-style-type: none;
+// }
 
-.services-list .services-list-disabilities p {
-    font-size: 14px;
-}
+// .our-services-heading {
+//   font-size: 24px !important;
+//   padding-bottom: 0px !important;
+//   float: left;
+// }
 
-.services-list .services-list-disorders p {
-    font-size: 20px;
-}
+// .services-list p {
+//   vertical-align: middle;
+//   font-family: 'Roboto', sans-serif;
+//   font-size: 16px;
+//   color: #000;
+//   font-weight: bold;
+// }
 
-aside {
-    background-color: #f7f7f7;
-    margin-bottom: 30px !important;
-}
+// .services-list p {
+//   vertical-align: middle;
+//   font-family: 'Roboto', sans-serif;
+//   font-size: 16px;
+//   color: #000;
+// }
 
-.services-list {
-    padding: 20px;
-}
+// .services-list .services-list-population p {
+//   font-size: 28px;
+//   font-weight: bold;
+// }
 
-.row-img {
-    height: 300px;
-    width: auto;
-    margin: 0px 0px;
-}
+// .services-list .services-list-disabilities p {
+//   font-size: 14px;
+// }
 
-.row-img-vertical {
-    height: 450px;
-    width: auto;
-    margin: 0px auto;
-}
+// .services-list .services-list-disorders p {
+//   font-size: 20px;
+// }
 
-#mission {
-    clear: both;
-    height: auto;
-    padding: 20px !important;
-}
+// aside {
+//   background-color: #f7f7f7;
+//   margin-bottom: 30px !important;
+// }
+
+// .services-list {
+//   padding: 20px;
+// }
+
+// .row-img {
+//   height: 300px;
+//   width: auto;
+//   margin: 0px 0px;
+// }
+
+// .row-img-vertical {
+//   height: 450px;
+//   width: auto;
+//   margin: 0px auto;
+// }
+
+// #mission {
+//   clear: both;
+//   height: auto;
+//   padding: 20px !important;
+// }

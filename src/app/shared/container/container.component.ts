@@ -1,5 +1,5 @@
 import { Component, OnInit, HostListener, Input } from '@angular/core';
-import { build, Image } from '@caiu/library';
+import { build, Image, truthy } from '@caiu/library';
 
 @Component({
   selector: 'gt-container',
@@ -8,9 +8,14 @@ import { build, Image } from '@caiu/library';
 })
 export class ContainerComponent implements OnInit {
 
+  @Input() backgroundImage: string;
   @Input() hasWallpaper = false;
 
   constructor() {
+  }
+
+  get hasBackgroundImage(): boolean {
+    return truthy(this.backgroundImage);
   }
 
   get images(): Image[] {
@@ -42,7 +47,16 @@ export class ContainerComponent implements OnInit {
       build(Image, { src: 'assets/highlights/GrowandTell-3858.jpg', height: 1819, width: 2728 }),
       build(Image, { src: 'assets/highlights/GrowandTell-3866.jpg', height: 1896, width: 2844 }),
       build(Image, { src: 'assets/highlights/GrowandTell-3875.jpg', height: 1880, width: 2820 }),
+      build(Image, { src: 'assets/highlights/GrowandTell-3924.jpg', height: 1920, width: 2880 }),
     ];
+  }
+
+  get offsetLeft(): number {
+    return 120;
+  }
+
+  get offsetTop(): number {
+    return 64;
   }
 
   get sidenavHeight(): number {

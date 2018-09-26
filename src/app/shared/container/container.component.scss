@@ -1,17 +1,24 @@
+@import '../../../common';
+
 #content {
-    position: absolute;
-    top: 124px;
-    top: 64px;
-    left: 120px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  top: 124px;
+  top: 64px;
+  left: 120px;
+  overflow-y: auto;
 }
 
 gt-sidenav {
-    position: fixed;
-    left: 0;
-    top: -60px;
-    z-index: 2;
+  position: fixed;
+  left: 0;
+  top: -60px;
+  z-index: 2;
 }
 
 iu-wallpaper {
-    display: block;
+  display: block;
 }

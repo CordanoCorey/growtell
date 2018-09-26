@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { MatToolbarModule, MatIconModule } from '@angular/material';
-import { SharedModule as IuSharedModule, WallpaperModule } from '@caiu/library';
+import { LibraryModule, SharedModule as IuSharedModule, WallpaperModule } from '@caiu/library';
 
 import { ContainerComponent } from './container/container.component';
 import { HeaderComponent } from './header/header.component';
@@ -10,9 +10,11 @@ import { MissionComponent } from './mission/mission.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { SocialIconsComponent } from './social-icons/social-icons.component';
+import { TeamMemberComponent } from './team-member/team-member.component';
 
 @NgModule({
   imports: [
+    LibraryModule,
     IuSharedModule,
     WallpaperModule,
     MatIconModule,
@@ -27,8 +29,10 @@ import { SocialIconsComponent } from './social-icons/social-icons.component';
     NavbarComponent,
     SidenavComponent,
     SocialIconsComponent,
+    TeamMemberComponent,
   ],
   exports: [
+    LibraryModule,
     IuSharedModule,
     ContainerComponent,
     HeaderComponent,
@@ -36,6 +40,7 @@ import { SocialIconsComponent } from './social-icons/social-icons.component';
     EmailComponent,
     MissionComponent,
     SocialIconsComponent,
+    TeamMemberComponent,
     WallpaperModule,
   ]
 })
