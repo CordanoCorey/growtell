@@ -3,5 +3,6 @@
 <gt-sidenav [style.height.px]="sidenavHeight"></gt-sidenav>
 <div id="content" [style.height.px]="windowHeight" [style.width.px]="windowWidth">
   <ng-content></ng-content>
-  <iu-wallpaper *ngIf="hasWallpaper" [images]="images" [imageOpacity]="0.6"></iu-wallpaper>
+  <iu-wallpaper *ngIf="hasWallpaper" [images]="images" [imageOpacity]="0.6" [style.height.px]="windowHeight"
+    [style.width.px]="windowWidth"></iu-wallpaper>
 </div>
