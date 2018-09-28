@@ -1,10 +1,31 @@
+@import '~@angular/material/_theming';
+@import '../../../common';
 .team-member {
-  .img-circle {
-    width: auto;
-    max-height: 200px;
-  }
-
-  .team-member-desc {
-    margin-top: 20px;
-  }
+    position: relative;
+    .photo {
+        @include mat-elevation(8);
+        width: auto;
+        max-height: 300px;
+    }
+    .title {
+        color: #1f1f1f;
+    }
+    .desc {
+        background: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        padding: 12px 2%;
+        width: 80%;
+        margin: 0 auto;
+    }
+    gt-testimonial {
+        position: absolute;
+        width: 40%;
+        top: 0;
+    }
+    gt-testimonial.left {
+        left: 0;
+    }
+    gt-testimonial.right {
+        right: 0;
+    }
 }

@@ -1,8 +1,8 @@
 <div class="team-member">
-  <img [src]="imageSrc" class="img-responsive img-circle" alt="">
+  <img [src]="imageSrc" class="photo" alt="">
   <h4>{{ name }}</h4>
-  <p class="text-muted">{{ title }}</p>
-  <ul class="list-inline social-buttons">
+  <p class="title">{{ title }}</p>
+  <!-- <ul class="list-inline social-buttons">
     <li>
       <a target="_blank" [href]="facebookHref">
         <i class="fa fa-facebook"></i>
@@ -13,8 +13,11 @@
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
-  </ul>
-  <p class="team-member-desc">
+  </ul> -->
+  <p class="desc">
     {{ description }}
   </p>
+  <!-- <gt-testimonial *ngFor="let t of testimonials" [quote]="t.quote" [by]="t.by"></gt-testimonial> -->
+  <gt-testimonial class="left" [quote]="testimonials[0].quote" [by]="testimonials[0].by"></gt-testimonial>
+  <gt-testimonial class="right" [quote]="testimonials[1].quote" [by]="testimonials[1].by"></gt-testimonial>
 </div>

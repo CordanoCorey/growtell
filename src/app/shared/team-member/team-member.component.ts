@@ -13,6 +13,7 @@ export class TeamMemberComponent implements OnInit {
   @Input() description = '';
   @Input() facebookHref = '';
   @Input() linkedInHref = '';
+  @Input() testimonials = [];
 
   constructor() { }
 

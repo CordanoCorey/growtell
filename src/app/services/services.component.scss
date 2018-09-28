@@ -1,102 +1,49 @@
 @import '~@angular/material/_theming';
 @import '../../common';
-
 #inner-content {
-
-  .graphic {
-    @include mat-elevation(4);
-    height: 400px;
-  }
-
-  .step {
-    width: 30%;
-    margin: 10px 1%;
-    float: left;
-
-    .mat-fab {
-      background-color: $primary-color;
-      color: #fff;
-      font-size: 24px;
+    .graphic {
+        @include mat-elevation(4);
+        width: 50%;
+        margin: 40px auto;
+        display: block;
     }
-  }
-
-  .card-list {
-    width: 30%;
-    margin: 10px 1%;
-    float: left;
-  }
+    .step {
+        @include mat-elevation(8);
+        text-align: center;
+        padding: 12px 1.5%;
+        width: 24.5%;
+        margin: 340px 0% 40px 0%;
+        float: left;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        .mat-fab {
+            background-color: $primary-color;
+            color: #fff;
+            font-size: 24px;
+        }
+        h4 {
+            color: #fff;
+        }
+        p {
+            color: #fff;
+        }
+    }
+    .step:nth-child(2) {
+        width: 36%;
+        margin: 340px 3% 40px 3%;
+    }
+    .card-list {
+        @include mat-elevation(8);
+        text-align: center;
+        padding: 12px 1.5%;
+        width: 24.5%;
+        margin: 10px 0%;
+        float: left;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+    }
+    .card-list.middle {
+        width: 36%;
+        margin: 20px 3% 40px 3%;
+    }
 }
-
-// .our-services-row {
-//   margin: 20px 0px;
-// }
-
-// .our-services {
-//   width: 100%;
-//   height: auto;
-// }
-
-// ul {
-//   list-style-type: none;
-// }
-
-// .our-services-heading {
-//   font-size: 24px !important;
-//   padding-bottom: 0px !important;
-//   float: left;
-// }
-
-// .services-list p {
-//   vertical-align: middle;
-//   font-family: 'Roboto', sans-serif;
-//   font-size: 16px;
-//   color: #000;
-//   font-weight: bold;
-// }
-
-// .services-list p {
-//   vertical-align: middle;
-//   font-family: 'Roboto', sans-serif;
-//   font-size: 16px;
-//   color: #000;
-// }
-
-// .services-list .services-list-population p {
-//   font-size: 28px;
-//   font-weight: bold;
-// }
-
-// .services-list .services-list-disabilities p {
-//   font-size: 14px;
-// }
-
-// .services-list .services-list-disorders p {
-//   font-size: 20px;
-// }
-
-// aside {
-//   background-color: #f7f7f7;
-//   margin-bottom: 30px !important;
-// }
-
-// .services-list {
-//   padding: 20px;
-// }
-
-// .row-img {
-//   height: 300px;
-//   width: auto;
-//   margin: 0px 0px;
-// }
-
-// .row-img-vertical {
-//   height: 450px;
-//   width: auto;
-//   margin: 0px auto;
-// }
-
-// #mission {
-//   clear: both;
-//   height: auto;
-//   padding: 20px !important;
-// }

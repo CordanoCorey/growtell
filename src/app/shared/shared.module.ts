@@ -11,6 +11,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { SocialIconsComponent } from './social-icons/social-icons.component';
 import { TeamMemberComponent } from './team-member/team-member.component';
+import { TestimonialComponent } from './testimonial/testimonial.component';
 
 @NgModule({
   imports: [
@@ -30,6 +31,7 @@ import { TeamMemberComponent } from './team-member/team-member.component';
     SidenavComponent,
     SocialIconsComponent,
     TeamMemberComponent,
+    TestimonialComponent,
   ],
   exports: [
     LibraryModule,
@@ -41,6 +43,7 @@ import { TeamMemberComponent } from './team-member/team-member.component';
     MissionComponent,
     SocialIconsComponent,
     TeamMemberComponent,
+    TestimonialComponent,
     WallpaperModule,
   ]
 })

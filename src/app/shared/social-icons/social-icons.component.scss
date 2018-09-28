@@ -1,14 +1,19 @@
 @import '../../../common';
-
 .social-icons {
-  @include silver-hgradient();
-  height: 64px;
-  overflow: hidden;
-  max-width: 160px;
-
-  img {
-    margin: 10px 1%;
-    max-height: 80%;
-    width: 30%;
-  }
+    @include silver-hgradient();
+    height: 64px;
+    overflow: hidden;
+    max-width: 160px;
+    a {
+        margin: 10px 0;
+        max-height: 90%;
+        width: 30%;
+        cursor: pointer;
+        position: relative;
+        margin: 0 6px;
+        img {
+            width: 40px;
+            margin-top: 10px;
+        }
+    }
 }
