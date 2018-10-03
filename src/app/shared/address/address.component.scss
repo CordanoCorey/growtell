@@ -1,0 +1,33 @@
+@import '~@angular/material/_theming';
+@import '../../../common';
+mat-card {
+    @include mat-elevation(8);
+    h2 {
+        color: #8e8e8e;
+    }
+    p {
+        margin: 0;
+    }
+    a {
+        margin: 6px 0;
+        mat-icon {
+            margin-right: 6px;
+        }
+    }
+    p.phone {
+        vertical-align: bottom;
+        position: relative;
+        mat-icon {
+            line-height: 24px;
+        }
+        .phone-number {
+            position: absolute;
+            top: 0;
+            left: 30px;
+        }
+    }
+    background-color: #fff;
+    @include black-gradient();
+    color: #fff;
+    width: 200px;
+}

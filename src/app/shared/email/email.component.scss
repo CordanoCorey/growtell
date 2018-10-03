@@ -1,3 +1,5 @@
+@import '~@angular/material/_theming';
+@import '../../../common';
 section {
     background-color: #f7f7f7;
 }
@@ -7,6 +9,10 @@ $text: #555;
 $invalid: #E91E63;
 $width: 400px;
 $cubic: cubic-bezier(.64, .09, .08, 1);
+#email-us {
+    @include mat-elevation(8);
+}
+
 html,
 body {
     overflow-x: hidden;
@@ -27,6 +33,7 @@ h1 {
     color: white;
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
     border-radius: 3px 3px 0 0;
+    @include primary-gradient;
 }
 
 form {
@@ -147,11 +154,12 @@ button {
     background: $base;
     cursor: pointer;
     border-radius: 3px;
-    padding: 6px;
+    padding: 12px 6px;
     width: $width;
     color: white;
     margin: 30px 0 0 25px;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+    font-size: 24px;
     &:hover {
         transform: translateY(-2px);
         box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.2);

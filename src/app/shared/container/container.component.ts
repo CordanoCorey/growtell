@@ -1,17 +1,22 @@
 import { Component, OnInit, HostListener, Input } from '@angular/core';
-import { build, Image, truthy } from '@caiu/library';
+import { MatDialog } from '@angular/material';
+import { build, Image, truthy, DumbComponent } from '@caiu/library';
+
+import { EmailComponent } from '../email/email.component';
 
 @Component({
   selector: 'gt-container',
   templateUrl: './container.component.html',
   styleUrls: ['./container.component.scss']
 })
-export class ContainerComponent implements OnInit {
+export class ContainerComponent extends DumbComponent implements OnInit {
 
   @Input() backgroundImage: string;
   @Input() hasWallpaper = false;
+  @Input() showHelp = true;
 
-  constructor() {
+  constructor(public dialog: MatDialog) {
+    super();
   }
 
   get hasBackgroundImage(): boolean {
@@ -51,8 +56,16 @@ export class ContainerComponent implements OnInit {
     ];
   }
 
+  get contentWidth(): number {
+    return this.windowWidth - this.offsetLeft;
+  }
+
+  get mobile(): boolean {
+    return this.windowWidth < 1000;
+  }
+
   get offsetLeft(): number {
-    return 120;
+    return this.mobile ? 0 : 120;
   }
 
   get offsetTop(): number {
@@ -72,7 +85,7 @@ export class ContainerComponent implements OnInit {
   }
 
   get windowWidth(): number {
-    return parseInt(localStorage.getItem('WINDOW_WIDTH'), 10) - 120;
+    return parseInt(localStorage.getItem('WINDOW_WIDTH'), 10);
   }
 
   set windowWidth(value: number) {
@@ -95,7 +108,11 @@ export class ContainerComponent implements OnInit {
   onResize(e: any) {
     this.windowHeight = e && e.currentTarget && e.currentTarget.innerHeight ? e.currentTarget.innerHeight : 0;
     this.windowWidth = e && e.currentTarget && e.currentTarget.innerWidth ? e.currentTarget.innerWidth : 0;
-    // console.log('\n\nwindow:resize', this.windowWidth, this.windowHeight);
+    console.log('\n\nwindow:resize', this.windowWidth, this.windowHeight);
+  }
+
+  help() {
+    this.openDialog(EmailComponent);
   }
 
 }

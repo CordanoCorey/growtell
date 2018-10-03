@@ -48,14 +48,18 @@ export class AboutComponent implements OnInit {
     title: 'Speech Language Pathologist',
     description: `Julie is a nationally and state certified Speech-Language Pathologist in Carlisle, Pennsylvania. She
       holds her Level I Pennsylvania teaching certification for Speech-Language Impaired students K-12. Julie has been a Speech-Language
-      Therapist in the school setting since 2013. She began providing private services in 2016 with Grow & Tell SLP. In
-      her spare time Julie enjoys coaching the Carlisle high school cheerleaders as well as being a wife.`,
+      Therapist in the school setting since 2013. She began providing private services in 2016 with Grow & Tell SLP. 
+      Julie grew up and currently resides in Carlisle with her family. She loves working in her home-town community. 
+      Julie enjoys spending time with her husband and daughter, as well as traveling to visit friends and family.`,
     facebookHref: 'https://www.facebook.com/grow.and.tellSLP/?pnref=lhc',
     linkedInHref: '',
     testimonials: [
       {
-        quote: ``,
-        by: ''
+        quote: `My 2-year old son began working with Julie early this year and almost immediately his speech began improving. 
+        Working with a 2-year-old isn’t always easy, but Julie found ways to engage him successfully, and seeing Miss Julie is now my son’s favorite activity of the week! 
+        She is patient and kind, loving and extremely effective. She has given us tools to use at home to continue working on improving his language skills, 
+        and I’m happy to report he’s now back on track for his age! I would recommend Julie and Jess to anyone!`,
+        by: 'Irene M.'
       },
       {
         quote: ``,
