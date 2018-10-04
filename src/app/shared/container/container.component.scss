@@ -1,5 +1,9 @@
 @import '~@angular/material/_theming';
 @import '../../../common';
+:host {
+    overflow: hidden;
+}
+
 #content {
     background-repeat: no-repeat;
     background-position: center center;

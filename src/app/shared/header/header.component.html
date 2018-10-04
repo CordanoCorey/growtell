@@ -1,6 +1,6 @@
 <mat-toolbar id="header" color="primary" class="mat-elevation-z6" [style.width.px]="windowWidth" [style.left.px]="offsetLeft">
     <a class="navbar-brand page-scroll" routerLink="/">Grow &amp; Tell SLP, LLC</a>
-    <p class="slp-lbl font-effect-emboss">Speech &amp; Language Pathology</p>
+    <p *ngIf="!mobile" class="slp-lbl font-effect-emboss">Speech &amp; Language Pathology</p>
     <!-- <div class="intro-lead-in font-effect-emboss">"Growing Confidence in Communication!"</div> -->
     <div id="header-links">
         <a class="link" routerLink="/home">

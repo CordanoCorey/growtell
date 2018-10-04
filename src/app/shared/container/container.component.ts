@@ -12,15 +12,23 @@ import { EmailComponent } from '../email/email.component';
 export class ContainerComponent extends DumbComponent implements OnInit {
 
   @Input() backgroundImage: string;
-  @Input() hasWallpaper = false;
   @Input() showHelp = true;
+  _hasWallpaper = false;
 
   constructor(public dialog: MatDialog) {
     super();
   }
 
+  @Input() set hasWallpaper(value: boolean) {
+    this._hasWallpaper = value;
+  }
+
+  get hasWallpaper(): boolean {
+    return this._hasWallpaper && !this.mobile;
+  }
+
   get hasBackgroundImage(): boolean {
-    return truthy(this.backgroundImage);
+    return truthy(this.backgroundImage) && !this.hasWallpaper;
   }
 
   get images(): Image[] {
