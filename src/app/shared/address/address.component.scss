@@ -14,13 +14,13 @@ mat-card {
             margin-right: 6px;
         }
     }
-    p.phone {
+    p.row {
         vertical-align: bottom;
         position: relative;
         mat-icon {
             line-height: 24px;
         }
-        .phone-number {
+        .row-detail {
             position: absolute;
             top: 0;
             left: 30px;
