@@ -105,3 +105,21 @@
         padding: 15px 20px;
     }
 }
+
+@media screen and (max-width: 1100px) {
+    .blog-entry {
+        margin: 20px auto;
+        padding: 10px;
+        .accordion-trigger {
+            img {
+                display: none;
+            }
+            .right {
+                width: 90%;
+            }
+        }
+        .accordion-content {
+            padding: 15px 10px;
+        }
+    }
+}
