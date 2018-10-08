@@ -1,23 +1,35 @@
-gt-email {
-    display: block;
-    max-width: 100%;
+#inner-content {
+    min-width: 500px;
+    gt-email {
+        max-width: 100%;
+    }
+    .pdf-link.mat-stroked-button {
+        border-color: #000;
+        color: #000;
+        padding: 10px;
+        font-size: 24px;
+        mat-icon {
+            margin-right: 5px;
+        }
+    }
 }
 
-gt-address {
-    // position: absolute;
-    // top: 160px;
-    // left: 100px;
-}
-
-.pdf-link.mat-stroked-button {
-    // position: absolute;
-    // bottom: 160px;
-    // left: 520px;
-    border-color: #000;
-    color: #000;
-    padding: 10px;
-    font-size: 24px;
-    mat-icon {
-        margin-right: 5px;
+@media screen and (max-width: 700px) {
+    #inner-content {
+        gt-email {
+            display: block;
+            width: 98%;
+            margin: 20px auto;
+        }
+        gt-address {
+            display: block;
+            width: 80%;
+            margin: 20px auto;
+        }
+        .pdf-link.mat-stroked-button {
+            display: block;
+            width: 90%;
+            margin: 20px auto;
+        }
     }
 }

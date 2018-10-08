@@ -10,7 +10,9 @@ $invalid: #E91E63;
 $width: 400px;
 $cubic: cubic-bezier(.64, .09, .08, 1);
 #email-us {
-    @include mat-elevation(8);
+    form {
+        @include mat-elevation(8);
+    }
 }
 
 html,
