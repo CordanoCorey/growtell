@@ -13,7 +13,7 @@
     top: 124px;
     top: 64px;
     left: 120px;
-    overflow-y: auto;
+    overflow-y: scroll;
     z-index: 1;
     #help {
         @include mat-elevation(8);

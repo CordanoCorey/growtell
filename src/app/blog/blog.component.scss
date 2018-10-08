@@ -29,6 +29,7 @@
             position: relative;
             float: right;
             width: 50%;
+            min-width: 400px;
             height: 100%;
             .mat-fab {
                 @include mat-elevation(12);
@@ -120,6 +121,22 @@
         }
         .accordion-content {
             padding: 15px 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .blog-entry {
+        .accordion-trigger {
+            padding-bottom: 20px;
+            .right {
+                mat-chip-list {
+                    display: none;
+                }
+                .read-more {
+                    bottom: 0px;
+                }
+            }
         }
     }
 }
