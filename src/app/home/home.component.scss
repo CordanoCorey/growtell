@@ -1,72 +1,65 @@
 @import '~@angular/material/_theming';
 @import '../../common';
-
 #inner-content {
-  height: 100%;
-  width: 100%;
-  min-height: 600px;
-  // min-width: 800px;
-  position: absolute;
-  z-index: 2;
-
-  gt-mission {
-    height: 400px;
-    width: 800px;
-  }
-
-  .intro-lead-in {
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-style: italic;
-    float: right;
-    font-size: 22px;
-    color: #000;
+    height: 100%;
+    width: 100%;
+    min-height: 600px; // min-width: 800px;
     position: absolute;
-    left: 20px;
-    top: 20px;
-  }
-
-  .intro-heading {
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    line-height: 75px;
-    margin-bottom: 50px;
-    font-size: 64px;
-    color: silver;
-    color: $primary-color;
-    position: absolute;
-    top: 80px;
-  }
-
-  .btn-xl {
-    @include mat-elevation(8);
-    text-decoration: none;
-    background-color: rgb(124, 252, 0);
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 18px;
-    border-color: rgb(124, 252, 0);
-    border-radius: 3px;
-    padding: 20px 40px;
-    display: inline-block;
-    margin-bottom: 0px;
-    line-height: 1.42857;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    touch-action: manipulation;
-    cursor: pointer;
-    user-select: none;
-    background-image: none;
-    border-width: 1px;
-    border-style: solid;
-    border-image: initial;
-    position: absolute;
-    bottom: 50px;
-  }
-
-  .btn-xl:hover {
-    background: silver;
-  }
+    z-index: 2;
+    gt-mission {
+        min-height: 400px;
+        max-width: 800px;
+    }
+    .intro-lead-in {
+        font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-style: italic;
+        float: right;
+        font-size: 22px;
+        color: #000;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+    .intro-heading {
+        font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: 75px;
+        margin-bottom: 50px;
+        font-size: 64px;
+        color: silver;
+        color: $primary-color;
+        position: absolute;
+        top: 80px;
+    }
+    .btn-xl {
+        @include mat-elevation(8);
+        text-decoration: none;
+        background-color: rgb(124, 252, 0);
+        font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 18px;
+        border-color: rgb(124, 252, 0);
+        border-radius: 3px;
+        padding: 20px 40px;
+        display: inline-block;
+        margin-bottom: 0px;
+        line-height: 1.42857;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        touch-action: manipulation;
+        cursor: pointer;
+        user-select: none;
+        background-image: none;
+        border-width: 1px;
+        border-style: solid;
+        border-image: initial;
+        position: absolute;
+        bottom: 50px;
+    }
+    .btn-xl:hover {
+        background: silver;
+    }
 }
