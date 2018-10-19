@@ -102,3 +102,12 @@
         }
     }
 }
+
+#header.mobile {
+    padding: 0 4px;
+    .navbar-brand {
+        img {
+            margin: 8px 0;
+        }
+    }
+}
