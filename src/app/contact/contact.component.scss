@@ -17,26 +17,6 @@
   }
 }
 
-<<<<<<< HEAD
-@media screen and (max-width: 800px) {
-    display: block !important;
-    #inner-content {
-        gt-email {
-            display: block;
-            width: 98%;
-            margin: 20px auto;
-        }
-        gt-address {
-            display: block;
-            width: 80%;
-            margin: 20px auto;
-        }
-        .pdf-link.mat-stroked-button {
-            display: block;
-            width: 90%;
-            margin: 20px auto;
-        }
-=======
 @media screen and (max-width: 700px) {
   #inner-content {
     display: block;
@@ -51,7 +31,6 @@
       display: block;
       width: 80%;
       margin: 20px auto;
->>>>>>> 162047b81d24c3f41469304828862ced74001924
     }
 
     .pdf-link.mat-stroked-button {
