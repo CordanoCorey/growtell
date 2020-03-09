@@ -10,31 +10,46 @@
     top: 30px;
   }
 
-  .btn-xl {
-    color: white;
-    background-color: #7CFC00;
-    border-color: #7CFC00;
+  .btn-ot {
+    color: #fff;
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     border-radius: 3px;
-    font-size: 18px;
     padding: 10px 20px;
+
+    p {
+      margin: 0;
+      font-size: 18px;
+
+      .click {
+        color: #63c900;
+      }
+    }
   }
 
-  .btn-xl:hover,
-  .btn-xl:focus,
-  .btn-xl:active,
-  .btn-xl.active,
-  .open .dropdown-toggle.btn-xl {
-    color: white;
+  .btn-ot:hover,
+  .btn-ot:focus,
+  .btn-ot:active,
+  .btn-ot.active,
+  .open .dropdown-toggle.btn-ot {
+    @include mat-elevation(8);
+    color: #fff;
     background-color: #63c900;
     border-color: #5ebf00;
+
+    p {
+
+      .click {
+        color: #000;
+        text-decoration: underline;
+      }
+    }
   }
 
-  .btn-xl:active,
-  .btn-xl.active,
-  .open .dropdown-toggle.btn-xl {
+  .btn-ot:active,
+  .btn-ot.active,
+  .open .dropdown-toggle.btn-ot {
     background-image: none;
   }
 
