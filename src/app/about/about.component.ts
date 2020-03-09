@@ -86,7 +86,26 @@ export class AboutComponent implements OnInit {
     ]
   };
 
-  constructor() {}
+  whitney = {
+    name: 'Whitney Black',
+    imageSrc: 'assets/whitney.jpg',
+    title: 'MS CCC-SLP',
+    description: `Whitney is a nationally and state certified Speech-Language Pathologist in Carlisle, Pennsylvania. She holds her Level 1 Educational Specialist certification for Speech-Language Impaired students PK-12. Whitney has been a Speech-Language Clinician in the school setting since 2017. She began providing private services in 2019 with Grow & Tell SLP. Whitney grew up and currently resides in Carlisle with her family. Whitney enjoys traveling, being outdoors, reading and spending time with family and friends. `,
+    facebookHref: 'https://www.facebook.com/grow.and.tellSLP/?pnref=lhc',
+    linkedInHref: '',
+    testimonials: [
+      {
+        quote: `We are sad to be leaving the area and our wonderful speech therapist Whitney. She always had a smile on her face and so positive and upbeat. I knew she was always rooting for my child. They were always accommodating and flexible with scheduling and we enjoyed our time there. We started out with Julie, who was just as awesome and when she went on maternity leave we stayed with Whitney. We will miss you Whitney!`,
+        by: 'Helen H.'
+      },
+      {
+        quote: ``,
+        by: ''
+      }
+    ]
+  };
 
-  ngOnInit() {}
+  constructor() { }
+
+  ngOnInit() { }
 }

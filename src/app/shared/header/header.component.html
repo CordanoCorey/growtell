@@ -1,26 +1,29 @@
 <mat-toolbar [class.mobile]="mobile" id="header" color="primary" class="mat-elevation-z6" [style.width.px]="windowWidth"
-    [style.left.px]="offsetLeft">
-    <a *ngIf="mobile" class="navbar-brand page-scroll" routerLink="/">
-        <img class="logo" src="assets/logo.png">
+  [style.left.px]="offsetLeft">
+  <a *ngIf="mobile" class="navbar-brand page-scroll" routerLink="/">
+    <img class="logo" src="assets/logo.png">
+  </a>
+  <a *ngIf="!mobile" class="navbar-brand page-scroll" routerLink="/">Grow &amp; Tell SLP, LLC</a>
+  <p *ngIf="!mobile" class="slp-lbl font-effect-emboss">Speech &amp; Language Pathology</p>
+  <!-- <div class="intro-lead-in font-effect-emboss">"Growing Confidence in Communication!"</div> -->
+  <div id="header-links">
+    <a class="link" routerLink="/home">
+      <mat-icon>home</mat-icon>
     </a>
-    <a *ngIf="!mobile" class="navbar-brand page-scroll" routerLink="/">Grow &amp; Tell SLP, LLC</a>
-    <p *ngIf="!mobile" class="slp-lbl font-effect-emboss">Speech &amp; Language Pathology</p>
-    <!-- <div class="intro-lead-in font-effect-emboss">"Growing Confidence in Communication!"</div> -->
-    <div id="header-links">
-        <a class="link" routerLink="/home">
-            <mat-icon>home</mat-icon>
-        </a>
-        <a class="link" routerLink="/about">
-            <mat-icon>info</mat-icon>
-        </a>
-        <a class="link" routerLink="/services">
-            <mat-icon>child_caret</mat-icon>
-        </a>
-        <a class="link" routerLink="/contact">
-            <mat-icon>contact_support</mat-icon>
-        </a>
-        <a class="link" routerLink="/blog">
-            <mat-icon>forum</mat-icon>
-        </a>
-    </div>
+    <a class="link" routerLink="/about">
+      <mat-icon>info</mat-icon>
+    </a>
+    <a class="link" routerLink="/services">
+      <mat-icon>child_caret</mat-icon>
+    </a>
+    <a class="link" routerLink="/contact">
+      <mat-icon>contact_support</mat-icon>
+    </a>
+    <a class="link" routerLink="/blog">
+      <mat-icon>forum</mat-icon>
+    </a>
+    <a class="link" routerLink="/forms">
+      <mat-icon>attach_file</mat-icon>
+    </a>
+  </div>
 </mat-toolbar>

@@ -1,0 +1,23 @@
+@import '~@angular/material/_theming';
+@import '../../common';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+
+  h2 {
+    margin: 120px 0 60px 0;
+  }
+
+  .doc {
+    @include mat-elevation(8);
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 22px;
+  }
+}

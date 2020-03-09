@@ -16,6 +16,14 @@ const routes: Routes = [
     loadChildren: './about/about.module#AboutModule'
   },
   {
+    path: 'forms',
+    loadChildren: './forms/forms.module#FormsModule'
+  },
+  {
+    path: 'services/occupational-therapy',
+    loadChildren: './occupational-therapy/occupational-therapy.module#OccupationalTherapyModule'
+  },
+  {
     path: 'services',
     loadChildren: './services/services.module#ServicesModule'
   },
