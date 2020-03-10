@@ -109,9 +109,26 @@
 
 @media screen and (max-width: 1100px) {
   #inner-content {
+    .btn-ot {
+      position: absolute;
+      right: 5%;
+      top: 85px;
+      width: 90%;
+
+      p {
+        font-size: 14px;
+        word-break: break-word;
+        white-space: initial;
+      }
+    }
+
     .graphic {
       width: 90%;
       margin: 40px 0%;
+    }
+
+    .step:nth-child(1) {
+      margin-top: 100px;
     }
 
     .step,
