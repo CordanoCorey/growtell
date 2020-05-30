@@ -1,6 +1,14 @@
 <gt-container [hasWallpaper]="true" backgroundImage="assets/blog-1.jpg">
   <div id="inner-content" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="20px">
     <div class="intro-lead-in font-effect-emboss">"Growing Confidence in Communication!"</div>
+    <a mat-button class="covid-link" href="/assets/COVID_Reopening June 2020.pdf">
+      <mat-icon class="font-effect-3d-float">info</mat-icon>
+      <!-- <mat-icon class="font-effect-emboss">text_snippet</mat-icon> -->
+      <span class="font-effect-outline btn-label">COVID Reopening June 2020</span>
+      <!-- <mat-icon class="font-effect-emboss">priority_high</mat-icon> -->
+      <mat-icon class="font-effect-3d-float">info</mat-icon>
+    </a>
+    <!-- <button class="covid-link" (click)="openBottomSheet()">COVID Reopening June 2020</button> -->
     <div class="intro-heading font-effect-3d-float">Welcome!</div>
     <gt-mission class="card"></gt-mission>
     <a mat-raised-button class="page-scroll btn btn-xl font-effect-outline" routerLink="/services">Tell Me More</a>

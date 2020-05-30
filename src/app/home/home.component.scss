@@ -13,6 +13,37 @@
     max-width: 800px;
   }
 
+  .covid-link {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    //background: rgba(0, 0, 0, 0.3);
+
+    .btn-label {
+      color: #fff;
+      height: 32px;
+      font-size: 32px;
+      border-bottom: 4px solid #000;
+    }
+
+    mat-icon {
+      height: 32px;
+      width: 32px;
+      line-height: 32px;
+      font-size: 32px;
+      color: $primary-color;
+      color: #000;
+      margin: 0 10px;
+    }
+  }
+
   .intro-lead-in {
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: italic;
