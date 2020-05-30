@@ -102,6 +102,14 @@
 }
 
 @media screen and (max-width: 700px) {
+  .covid-link {
+    display: none;
+
+    .btn-label {}
+
+    mat-icon {}
+  }
+
   #inner-content {
     display: block;
 
