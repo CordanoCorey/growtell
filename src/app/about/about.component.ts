@@ -99,8 +99,18 @@ export class AboutComponent implements OnInit {
         by: 'Helen H.'
       },
       {
-        quote: ``,
-        by: ''
+        quote: `
+          If you are looking for Speech Therapy for your child, look no further. Grow and Tell is the best.
+          My daughter took speech with Whitney, and her articulation has improved immensely!
+          My daughter loves Whitney and could not wait to go to Speech each week.
+          She had such a good time at Grow and Tell and we are so happy with how they helped our daughter.
+          Just last week, our daughter met her therapy goal.
+          While we are thrilled for our daughter, we are a little sad about not visiting Grow and Tell each week.
+          My daughter really is going to miss herr time with Whitney.
+          However, it is so great to see my daughter communicate so well now.
+          I can't believe how much more confidence my daughter has with her speech now.
+        `,
+        by: 'Mary Parsons'
       }
     ]
   };

@@ -44,6 +44,36 @@
     }
   }
 
+  .covid-link-2 {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+
+    .btn-label {
+      color: $primary-color;
+      height: 32px;
+      font-size: 16px;
+      border-bottom: 4px solid #000;
+    }
+
+    mat-icon {
+      height: 32px;
+      width: 32px;
+      line-height: 32px;
+      font-size: 16px;
+      color: $primary-color;
+      color: #000;
+      margin: 0 10px;
+    }
+  }
+
   .intro-lead-in {
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: italic;
@@ -117,6 +147,10 @@
       mat-icon {
         color: $primary-color;
       }
+    }
+
+    .covid-link-2 {
+      display: none;
     }
 
     .intro-lead-in {
