@@ -14,6 +14,7 @@ export class ContainerComponent extends DumbComponent implements OnInit {
   @Input() backgroundImage: string;
   @Input() showHelp = true;
   _hasWallpaper = false;
+  wallpaperImage = '/assets/bg.PNG';
 
   constructor(public dialog: MatDialog) {
     super();
